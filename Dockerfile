@@ -16,6 +16,8 @@ RUN yum install epel-release -y && \
     yum install -y python3-devel && \
     yum install -y wget && \
     yum install -y nmap && \
+    yum install -y libffi-devel && \
+    yum install -y openssl-devel && \
     yum install -y postgresql-devel gcc python3-devel && \
     pip3 install psycopg2-binary==2.8.5 && \
     yum clean all
