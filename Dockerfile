@@ -15,11 +15,9 @@ RUN yum install epel-release -y && \
     yum install -y python3-pip && \
     yum install -y python3-devel && \
     yum install -y wget && \
+    yum install -y nmap && \
     yum clean all
 
-
-RUN wget https://nmap.org/dist/nmap-7.93-1.x86_64.rpm
-RUN rpm -ivh nmap-*.x86_64.rpm
 
 RUN mkdir /opt/nerve
 
